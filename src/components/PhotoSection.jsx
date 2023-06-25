@@ -8,13 +8,11 @@ const PhotoSection = ({ title, images, first }) => {
         src={flower}
         className="w-32 lg:w-40 absolute left-1/2 -translate-x-1/2 -top-16"
       />
-      <ul className="flex overflow-x-auto">
+      <ul className="flex overflow-x-auto snap-x">
         {images.map((el, key) => (
-          <ul
-            key={key}
-            style={{ background: `url(${el})` }}
-            className="aspect-[2/3] min-w-[70%] lg:min-w-[25%] bg-contain bg-center"
-          ></ul>
+          <li key={key} className="snap-start min-w-[24rem]">
+            <img src={el} className="aspect-[2/3] object-cover w-96"></img>
+          </li>
         ))}
       </ul>
       <div className="w-60 lg:w-72 absolute left-1/2 -translate-x-1/2 -bottom-10">

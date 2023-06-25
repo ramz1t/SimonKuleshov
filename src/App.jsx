@@ -8,7 +8,7 @@ function App() {
       <Landing />
       <Gallery />
       <Footer />
-      <button className="bg-accent hover:bg-accent/[.8] hover:shadow-lg text-white rounded-full text-lg text-center px-7 md:px-10 py-3 md:py-5 font-secondary fixed bottom-5 right-5">
+      <button className="bg-accent hover:bg-accentdim hover:shadow-lg text-white rounded-full text-lg text-center px-7 md:px-10 py-3 md:py-5 font-secondary fixed bottom-5 right-5 transition-colors">
         book photoshoot
       </button>
     </>

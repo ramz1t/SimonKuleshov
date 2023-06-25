@@ -1,49 +1,8 @@
 import React from "react";
 import PhotoSection from "./PhotoSection";
+import sections from "../../data";
 
 const Gallery = () => {
-  const sections = [
-    {
-      title: "portrait",
-      images: [
-        "/trash/1.jpg",
-        "/trash/2.jpg",
-        "/trash/3.jpg",
-        "/trash/4.jpeg",
-        "/trash/1.jpg",
-        "/trash/2.jpg",
-        "/trash/3.jpg",
-        "/trash/4.jpeg",
-      ],
-    },
-    {
-      title: "street",
-      images: [
-        "/trash/1.jpg",
-        "/trash/2.jpg",
-        "/trash/3.jpg",
-        "/trash/4.jpeg",
-        "/trash/1.jpg",
-        "/trash/2.jpg",
-        "/trash/3.jpg",
-        "/trash/4.jpeg",
-      ],
-    },
-    {
-      title: "still life",
-      images: [
-        "/trash/1.jpg",
-        "/trash/2.jpg",
-        "/trash/3.jpg",
-        "/trash/4.jpeg",
-        "/trash/1.jpg",
-        "/trash/2.jpg",
-        "/trash/3.jpg",
-        "/trash/4.jpeg",
-      ],
-    },
-  ];
-
   return (
     <section className="mt-10">
       {sections.map((section, key) => (

@@ -13,6 +13,7 @@ export default {
       colors: {
         secondary: '#32353e',
         accent: '#bc8f8f',
+        accentdim: '#a97070'
       }
     },
   },

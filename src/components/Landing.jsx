@@ -22,7 +22,7 @@ const Landing = () => {
           </div>
           <div className="w-1/6 h-[75vh] bg-secondary">
             <p className="absolute text-right text-accent text-5xl lg:text-9xl font-secondary top-40 right-10 lg:right-32">
-              kuleshov <br /> semen
+              kuleshov <br /> simon
             </p>
           </div>
         </div>

@@ -1,7 +1,8 @@
 [
     {
         "title": "portrait",
-        "images": ["/trash/1.jpg", "/trash/2.jpg", "/trash/3.jpg", "/trash/4.jpeg"]
+        "images": ["/trash/1.jpg", "/trash/2.jpg", "/trash/3.jpg", "/trash/4.jpeg"],
+        "url": "portraits"
     },
     {
         "title": "street",
@@ -12,7 +13,8 @@
             "/trash/4.jpeg",
             "/trash/1.jpg",
             "/trash/4.jpeg"
-        ]
+        ],
+        "url": "street"
     },
     {
         "title": "still life",
@@ -24,6 +26,7 @@
             "/trash/1.jpg",
             "/trash/2.jpg",
             "/trash/3.jpg"
-        ]
+        ],
+        "url": "still-life"
     }
 ]

@@ -1,5 +1,6 @@
 import camera from "../assets/camera.png";
 import blister from "../assets/blister2.png";
+import { Fade } from "react-reveal";
 
 const Footer = () => {
   return (
@@ -38,7 +39,9 @@ const Footer = () => {
           photosem.jpg
         </a>
       </p>
-      <img src={camera} className="w-3/4 md:w-3/5 lg:w-1/3" />
+      <Fade bottom>
+        <img src={camera} className="w-3/4 md:w-3/5 lg:w-1/3" />
+      </Fade>
     </section>
   );
 };

@@ -7,7 +7,7 @@ const TextCircle = ({ text }) => {
       <div className="relative">
         {[...text].map((l, key) => (
           <p
-            className={`absolute origin-bottom-left h-20 lg:h-40 text-center w-4 -top-20 lg:-top-40 text-lg lg:text-2xl text-white font-primary`}
+            className={`absolute origin-bottom-left h-[17vh] text-center w-4 -top-[17vh] text-lg lg:text-2xl text-white font-primary`}
             style={{
               rotate: `${(key / text.length).toFixed(10) * 360}deg`,
             }}

@@ -9,6 +9,7 @@ const Gallery = () => {
         <PhotoSection
           title={section.title}
           images={section.images}
+          url={section.url}
           key={key}
           first={key === 0}
         />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router";
 import galleries from "../../galleries.json";
 import InfHSlider from "../components/InfHSlider";
@@ -13,6 +13,10 @@ const GalleryPage = () => {
       .fill(0)
       .map((_, pi) => `/images/${gallery}/${si + 1}/${pi + 1}.jpg`)
   );
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className="bg-secondary min-h-screen grid gap-10 pt-10 max-w-full overflow-hidden place-content-start">

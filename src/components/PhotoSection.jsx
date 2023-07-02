@@ -2,6 +2,7 @@ import flower from "../assets/flower.png";
 import blister from "../assets/blister1.png";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal";
+import InfHSlider from "./InfHSlider";
 
 const PhotoSection = ({ title, images, first, url }) => {
   return (
@@ -11,16 +12,7 @@ const PhotoSection = ({ title, images, first, url }) => {
           src={flower}
           className="w-32 lg:w-40 absolute left-1/2 -translate-x-1/2 -top-16"
         />
-        <ul className="flex overflow-x-auto snap-x">
-          {images.map((el, key) => (
-            <li key={key} className="snap-start min-w-[80vw] md:min-w-[24rem]">
-              <img
-                src={el}
-                className="aspect-[2/3] object-cover w-[80vw] md:w-96"
-              ></img>
-            </li>
-          ))}
-        </ul>
+        <InfHSlider images={images} />
         <Link
           to={url}
           className="w-60 lg:w-72 absolute left-1/2 -translate-x-1/2 -bottom-10"

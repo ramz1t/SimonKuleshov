@@ -4,7 +4,7 @@ import sections from "../../data";
 
 const Gallery = () => {
   return (
-    <section className="mt-10">
+    <section>
       {sections.map((section, key) => (
         <PhotoSection
           title={section.title}

@@ -1,32 +1,54 @@
 [
     {
         "title": "portrait",
-        "images": ["/trash/1.jpg", "/trash/2.jpg", "/trash/3.jpg", "/trash/4.jpeg"],
+        "images": [
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg"
+        ],
         "url": "portraits"
     },
     {
         "title": "street",
         "images": [
-            "/trash/1.jpg",
-            "/trash/2.jpg",
-            "/trash/3.jpg",
-            "/trash/4.jpeg",
-            "/trash/1.jpg",
-            "/trash/4.jpeg"
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg"
         ],
         "url": "street"
     },
     {
         "title": "still life",
         "images": [
-            "/trash/1.jpg",
-            "/trash/2.jpg",
-            "/trash/3.jpg",
-            "/trash/4.jpeg",
-            "/trash/1.jpg",
-            "/trash/2.jpg",
-            "/trash/3.jpg"
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg"
         ],
         "url": "still-life"
+    },
+    {
+        "title": "design",
+        "images": [
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg",
+            "/images/portraits/1/1.jpg"
+        ],
+        "url": "design"
     }
 ]

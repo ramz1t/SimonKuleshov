@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <section className="bg-secondary flex flex-col items-center pt-20 gap-10 ">
       <Fade bottom>
-        <p className="text-center text-white font-primary text-xl lg:text-3xl max-md:px-5 md:w-1/2">
+        <p className="text-center text-white font-primary text-xl lg:text-3xl max-md:px-7 md:w-1/2">
           for me, <span className="text-accent">photography</span> is more than
           just a way of earning money. First of all this is my{" "}
           <span className="text-accent">hobby</span> and my{" "}

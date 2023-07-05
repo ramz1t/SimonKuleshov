@@ -7,7 +7,7 @@ import InfHSlider from "./InfHSlider";
 const PhotoSection = ({ title, images, first, url }) => {
   return (
     <Fade bottom>
-      <figure className={`relative ${!first ? "mt-36" : null}`}>
+      <figure className={`relative ${!first ? "mt-36" : "mt-10"}`}>
         <img
           src={flower}
           className="w-32 lg:w-40 absolute left-1/2 -translate-x-1/2 -top-16"

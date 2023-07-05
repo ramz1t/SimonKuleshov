@@ -25,7 +25,7 @@ const Landing = () => {
           </div>
           <div className="w-1/6 h-[75vh] bg-secondary">
             <Fade right>
-              <p className="absolute text-right text-accent text-5xl lg:text-9xl font-secondary top-40 right-10 lg:right-32">
+              <p className="absolute text-right text-accent text-5xl md:text-8xl lg:text-9xl font-secondary top-40 right-10 lg:right-32">
                 kuleshov <br /> simon
               </p>
             </Fade>

@@ -36,3 +36,13 @@
     background-attachment: fixed !important;
   }
 }
+
+html {
+  background-image: linear-gradient(
+    to bottom,
+    white 0%,
+    white 90%,
+    #32353e 90%,
+    #32353e 100%
+  );
+}

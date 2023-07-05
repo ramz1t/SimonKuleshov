@@ -20,12 +20,15 @@ const GalleryPage = () => {
 
   return (
     <section className="bg-secondary min-h-screen grid gap-10 pt-10 max-w-full overflow-hidden place-content-start">
-      <h1>
+      <h1 className="group w-fit ml-10">
         <Link
           to="/"
-          className="px-10 font-secondary text-6xl text-accent flex transition-all items-center gap-10"
+          className="font-secondary text-6xl text-accent flex transition-all items-center gap-10"
         >
-          <img src={arrow} className="h-10 transition-all" />
+          <img
+            src={arrow}
+            className="h-10 transition-all group-hover:scale-125"
+          />
           {galleries[gallery].title}
         </Link>
       </h1>

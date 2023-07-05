@@ -1,9 +1,6 @@
 const TextCircle = ({ text }) => {
   return (
-    <div
-      className="mx-auto origin-left !duration-[50000ms] ml-[50%]"
-      id="text-circle"
-    >
+    <div className="origin-left !duration-[50000ms] ml-[50%]" id="text-circle">
       <div className="relative">
         {[...text].map((l, key) => (
           <p

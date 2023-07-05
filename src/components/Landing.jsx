@@ -34,7 +34,6 @@ const Landing = () => {
         <Fade>
           <TextCircle text={"you can buy photos you can't buy memories - "} />
         </Fade>
-
         <div className="w-full h-[20vh] bg-secondary"></div>
       </section>
       <Fade bottom>

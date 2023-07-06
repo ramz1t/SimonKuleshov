@@ -23,22 +23,38 @@ const Footer = () => {
         </div>
         <p className="font-primary text-white text-lg lg:text-2xl text-center">
           Telegram:{" "}
-          <a href="" target="_blank">
+          <a
+            href="https://t.me/RafSiemons"
+            target="_blank"
+            className="hover:underline"
+          >
             RafSiemons
           </a>
           <br />
           Mobile:{" "}
-          <a href="tel:+31627313868" target="_blank">
+          <a
+            href="tel:+31627313868"
+            target="_blank"
+            className="hover:underline"
+          >
             +31627313868
           </a>
           <br />
           Mail:{" "}
-          <a href="mailto:photosem.jpg@gmail.com" target="_blank">
+          <a
+            href="mailto:photosem.jpg@gmail.com"
+            target="_blank"
+            className="hover:underline"
+          >
             photosem.jpg@gmail.com
           </a>{" "}
           <br />
           Instagram:{" "}
-          <a href="https://www.instagram.com/photosem.jpg/" target="_blank">
+          <a
+            href="https://www.instagram.com/photosem.jpg/"
+            target="_blank"
+            className="hover:underline"
+          >
             photosem.jpg
           </a>
         </p>

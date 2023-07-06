@@ -2,20 +2,28 @@ import React, { useState } from "react";
 import cn from "classnames";
 import blister from "../assets/blister2.png";
 
-const BookPopover = ({ open }) => {
+const BookPopover = ({ open, setOpen }) => {
   const [contact, setContact] = useState("");
+  const [isError, setIsError] = useState(false);
+  const [isSent, setIsSent] = useState(false);
   const [name, setName] = useState("");
   const [details, setDetails] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (isSent) {
+      setOpen(false);
+      return;
+    }
+    setIsError(false);
+    setIsSent(false);
     const form = new FormData();
     form.append(
       "from",
       "Mailgun Sandbox <postmaster@sandbox5645518d2d8c4e958e02b99f444154c3.mailgun.org>"
     );
     form.append("to", "Timur Ramazanov <timurram007@ya.ru>");
-    form.append("subject", `${name} - ${contact}`);
+    form.append("subject", `📷 Photoshoot request: ${name} - ${contact} 🔔`);
     form.append("text", details);
 
     fetch(
@@ -29,7 +37,9 @@ const BookPopover = ({ open }) => {
         },
         body: form,
       }
-    );
+    )
+      .then((_) => setIsSent(true))
+      .catch((err) => setIsError(true));
   };
 
   return (
@@ -75,9 +85,17 @@ const BookPopover = ({ open }) => {
           className="bg-accent text-secondary placeholder:text-secondary border-b-2 pb-2 border-secondary mb-2 md:mb-5 focus:outline-none"
           onChange={(e) => setDetails(e.target.value)}
         />
-        <button className="font-secondary text-white text-3xl bg-secondary hover:bg-secondary/90 px-14 py-2 w-fit mx-auto">
-          send
-        </button>
+        <div className="flex items-center justify-center gap-10">
+          {isSent && (
+            <p className="font-primary text-white text-lg">Appointment sent!</p>
+          )}
+          <button
+            className="font-secondary text-white text-3xl bg-secondary hover:bg-secondary/90 px-14 py-2 w-fit disabled:bg-secondary/80 transition-colors"
+            disabled={contact === "" || name === "" || details === ""}
+          >
+            {isSent ? "close" : "send"}
+          </button>
+        </div>
       </form>
     </div>
   );

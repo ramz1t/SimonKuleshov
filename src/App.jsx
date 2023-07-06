@@ -35,7 +35,7 @@ function App() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <BookPopover open={open} />
+      <BookPopover open={open} setOpen={setOpen} />
       <RouterProvider router={router} />
       <Fade right>
         <button

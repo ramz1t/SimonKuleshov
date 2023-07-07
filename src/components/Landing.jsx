@@ -16,16 +16,16 @@ const Landing = () => {
           />
         </div>
         <div className="flex justify-between w-full">
-          <div className="w-1/6 h-[75vh] bg-secondary relative">
+          <div className="max-md:w-[10%] w-1/6 h-[75vh] bg-secondary relative">
             <Fade left>
-              <p className="!rotate-[270deg] font-primary text-white text-xl lg:text-3xl absolute bottom-1/2 -right-10 md:right-0">
+              <p className="!rotate-[270deg] font-primary text-white text-xl lg:text-3xl absolute bottom-1/2 -right-14 md:right-0">
                 @photosem.jpg
               </p>
             </Fade>
           </div>
-          <div className="w-1/6 h-[75vh] bg-secondary">
+          <div className="max-md:w-[10%] w-1/6 h-[75vh] bg-secondary">
             <Fade right>
-              <p className="absolute text-right text-accent text-5xl md:text-8xl lg:text-9xl font-secondary top-40 right-10 lg:right-32">
+              <p className="absolute text-right text-accent text-5xl md:text-8xl lg:text-9xl font-secondary top-40 right-5 lg:right-32">
                 kuleshov <br /> simon
               </p>
             </Fade>

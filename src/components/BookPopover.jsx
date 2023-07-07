@@ -69,7 +69,7 @@ const BookPopover = ({ open, setOpen }) => {
         </p>
         <input
           type="text"
-          placeholder="your email/phone number/WhatsApp etc."
+          placeholder="your contacts"
           className="bg-accent text-secondary placeholder:text-secondary border-b-2 pb-2 border-secondary mb-2 md:mb-5 focus:outline-none"
           onChange={(e) => setContact(e.target.value)}
         />

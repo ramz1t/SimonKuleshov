@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <>
       <section
-        className="bg-[url('/images/portrait.png')] min-h-screen bg-no-repeat bg-cover bg-center max-md:bg-[40%_0%] bg-fixed"
+        className="bg-[url('/images/portrait.png')] min-h-screen bg-no-repeat bg-cover bg-center max-md:bg-[45%_0%] bg-fixed"
         id="img-bg"
       >
         <div className="w-full h-[5vh] bg-secondary relative">
@@ -18,7 +18,12 @@ const Landing = () => {
         <div className="flex justify-between w-full">
           <div className="max-md:w-[10%] w-1/6 h-[75vh] bg-secondary relative">
             <Fade left>
-              <p className="!rotate-[270deg] font-primary text-white text-xl lg:text-3xl absolute bottom-1/2 -right-14 md:right-0">
+              <p
+                className="font-primary text-white text-xl lg:text-3xl absolute bottom-1/2 translate-y-1/2 right-2  md:right-10 !rotate-180"
+                style={{
+                  "writing-mode": "vertical-rl",
+                }}
+              >
                 @photosem.jpg
               </p>
             </Fade>

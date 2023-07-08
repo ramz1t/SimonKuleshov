@@ -6,9 +6,8 @@ const Landing = () => {
   return (
     <>
       <section
-        className="bg-[url('/images/portrait.png')] min-h-screen bg-no-repeat bg-center md:!bg-cover max-md:bg-[48%_0%] max-md:landscape:bg-[45%_50%] md:bg-fixed"
+        className="bg-[url('/images/portrait.png')] min-h-screen bg-no-repeat bg-cover bg-center max-md:bg-[45%_0%] bg-fixed"
         id="img-bg"
-        style={{ backgroundSize: "220%" }}
       >
         <div className="w-full h-[5vh] bg-secondary relative">
           <img

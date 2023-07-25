@@ -36,11 +36,9 @@ const Landing = () => {
                         </Fade>
                     </div>
                 </div>
-                <Fade>
-                    <TextCircle
-                        text={"you can buy photos you can't buy memories - "}
-                    />
-                </Fade>
+                <TextCircle
+                    text={"you can buy photos you can't buy memories - "}
+                />
                 <div className="w-full h-[20vh] bg-secondary"></div>
             </section>
             <Fade bottom>

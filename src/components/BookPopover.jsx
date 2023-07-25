@@ -9,6 +9,9 @@ const BookPopover = ({ open, setOpen }) => {
     const [name, setName] = useState("");
     const [details, setDetails] = useState("");
 
+    const botApiKey = "KEY_FROM_@BOTFATHER";
+    const chatId = "CLIENT_CHAT_KEY";
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (isSent) {
@@ -17,34 +20,13 @@ const BookPopover = ({ open, setOpen }) => {
         }
         setIsError(false);
         setIsSent(false);
-        const form = new FormData();
-        form.append(
-            "from",
-            "Mailgun Sandbox <postmaster@sandbox5645518d2d8c4e958e02b99f444154c3.mailgun.org>",
-        );
-        form.append("to", "Timur Ramazanov <timurram007@ya.ru>");
-        form.append(
-            "subject",
-            `📷 Photoshoot request: ${name} - ${contact} 🔔`,
-        );
-        form.append("text", details);
-
+        const text = `⚠️ New message from *${name}* ⚠️%0A%0A📱 *${contact}*%0A%0A📑  ${details}`;
         fetch(
-            "https://api.mailgun.net/v3/sandbox5645518d2d8c4e958e02b99f444154c3.mailgun.org/messages",
-            {
-                method: "POST",
-                headers: {
-                    Authorization:
-                        "Basic " +
-                        btoa(
-                            "api:f400869622a3c7d119fd19903df89038-e5475b88-24f5b47e",
-                        ),
-                },
-                body: form,
-            },
+            `https://api.telegram.org/bot${botApiKey}/sendMessage?chat_id=${chatId}&text=${text}&parse_mode=markdown`,
+            { method: "POST" }
         )
             .then((_) => setIsSent(true))
-            .catch((err) => setIsError(true));
+            .catch((_) => setIsError(true));
     };
 
     return (
@@ -54,7 +36,7 @@ const BookPopover = ({ open, setOpen }) => {
                 "z-40 backdrop-blur-xl transition-opacity w-full h-full fixed flex justify-center items-center",
                 open
                     ? "opacity-100 bg-white/[.15] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                    : "opacity-0 top-full",
+                    : "opacity-0 top-full"
             )}
         >
             <form
